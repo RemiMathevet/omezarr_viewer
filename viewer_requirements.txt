@@ -1,0 +1,24 @@
+# OME-Zarr Viewer
+# Viewer pyramidal pour lames virtuelles au format OME-Zarr
+# CHU Besançon - Anatomopathologie computationnelle
+
+# === Dépendances principales ===
+zarr>=2.16.0                 # Lecture des fichiers OME-Zarr (v2 et v3)
+numpy>=1.24.0                # Manipulation de tableaux
+Pillow>=10.0.0               # Traitement et affichage d'images
+
+# === Interface graphique ===
+# tkinter est inclus dans Python standard (pas besoin de pip)
+
+# === Notes d'installation ===
+#
+# 1. Installation standard :
+#    pip install -r requirements.txt
+#
+# 2. Sur Ubuntu/Debian, tkinter peut nécessiter :
+#    sudo apt install python3-tk
+#
+# 3. Le viewer supporte :
+#    - Dossiers OME-Zarr (.zarr, .ome.zarr)
+#    - Archives ZIP contenant des OME-Zarr (.zarr.zip, .ome.zarr.zip)
+#    - Annotations GeoJSON intégrées ou externes
